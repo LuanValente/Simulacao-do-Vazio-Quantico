@@ -6,6 +6,7 @@ Este projeto é uma visualização interativa que simula o conceito de flutuaç�
 
 - [Descrição](#descrição)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Acesso Direto Pela Web](#Acesso-web)
 - [Instalação](#instalação)
 - [Uso](#uso)
 - [Contribuição](#contribuição)
@@ -32,7 +33,7 @@ Este projeto oferece uma maneira visual e interativa de explorar e compreender c
 - **Three.js:** Biblioteca JavaScript para criar e renderizar gráficos 3D.
 - **TypeScript:** Superconjunto de JavaScript que adiciona tipagem estática ao código.
 - **CSS:** Para estilização .
-## Acesso pela web
+## Acesso-web
 Link do site para demonstração : https://main--simulacaovazioquantico.netlify.app/
 
 ## Instalação
