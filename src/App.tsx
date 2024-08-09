@@ -7,7 +7,7 @@ const App: React.FC = () => {
     <div className="App">
       <QuantumCube />
       <div className="description-container-wrapper">
-        <h2 className="description-title">Simulação de Flutuação Quântica No Vacuo</h2>
+        <h2 className="description-title">Simulação de Flutuação Quântica de Vácuo</h2>
         <div className="description-container">
           <button className="more-button" onClick={() => {
             const moreInfo = document.querySelector('.more-info');
