@@ -1,0 +1,34 @@
+/* Container */
+.quantum-fluctuation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  color: #ffffff;
+}
+
+/* Canvas */
+.quantum-fluctuation-canvas {
+  width: 100%;
+  height: 70vh;
+  background-color: #000000;
+  border: 2px solid #09d3ac;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Description */
+.quantum-fluctuation-description {
+  margin-top: 20px;
+  text-align: left;
+  max-width: 800px;
+}
+
+.quantum-fluctuation-description h2,
+.quantum-fluctuation-description h3 {
+  color: #09d3ac;
+}
+
+.quantum-fluctuation-description p {
+  color: #cccccc;
+}

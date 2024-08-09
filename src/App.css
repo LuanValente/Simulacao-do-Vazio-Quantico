@@ -1,38 +1,142 @@
+/* Estilos para a aplicação principal */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb); /* Fundo com gradiente suave */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e limpa */
+}
+
+/* Estilos para o canvas */
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient(circle, #ffffff, #d1d5db); /* Fundo com gradiente radial */
+}
+
+/* Wrapper para o conteúdo de descrição */
+.description-container-wrapper {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
+  max-width: 900px;
+  margin: 80px auto 0; /* Margem superior ajustada para elevar o contêiner */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra mais suave e expansiva */
+  position: relative;
+  z-index: 10;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Animação para hover */
+}
+
+.description-container-wrapper:hover {
+  transform: translateY(-10px); /* Leve elevação ao hover */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* Título da descrição */
+.description-title {
+  text-align: center;
+  font-size: 2.5rem; /* Aumentado para maior impacto */
+  margin-bottom: 20px;
+  color: #282c34;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+/* Container para a descrição */
+.description-container {
+  padding: 20px;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Botão 'Mais' */
+.more-button {
+  background: linear-gradient(135deg, #007bff, #0056b3); /* Gradiente no botão */
+  color: white;
+  border: none;
+  padding: 12px 24px; /* Padding maior para maior impacto */
+  cursor: pointer;
+  border-radius: 50px; /* Bordas mais arredondadas */
+  margin: 20px 0; /* Maior espaçamento ao redor */
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Animações de transição */
+  font-size: 16px;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra mais forte */
 }
 
-.App-link {
-  color: #61dafb;
+.more-button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80); /* Gradiente ao hover */
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Estilo para a seta dentro do botão */
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid white;
+  margin-left: 10px;
+  transition: transform 0.3s;
+}
+
+.arrow.up {
+  transform: rotate(-180deg);
+}
+
+/* Informações adicionais */
+.more-info {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.more-info.visible {
+  max-height: 1000px;
+  padding-top: 20px;
+}
+
+/* Estilos para parágrafos dentro das informações adicionais */
+.more-info p {
+  margin: 10px 0;
+  line-height: 1.6; /* Melhor espaçamento entre linhas */
+}
+
+/* Estilos para cabeçalhos dentro das informações adicionais */
+.more-info h3 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #007bff; /* Cor para maior destaque */
+}
+
+/* Adicionando responsividade */
+@media (max-width: 600px) {
+  .description-container-wrapper {
+    padding: 15px;
+    margin-top: 60px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .description-title {
+    font-size: 2rem;
+  }
+
+  .more-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .more-info.visible {
+    max-height: 800px;
   }
 }

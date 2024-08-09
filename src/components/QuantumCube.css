@@ -1,0 +1,60 @@
+/* Estilos gerais para a aplicação */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f3f4f6, #e5e7eb); /* Fundo com gradiente suave */
+    overflow: hidden;
+  }
+  
+  /* Estilos para o container do componente */
+  .quantum-cube-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Estilos para o mountRef */
+  .quantum-cube-mount {
+    width: 100%;
+    height: 70vh;
+  }
+  
+  /* Estilos para a caixa de informações */
+  .info-box {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    backdrop-filter: blur(10px); /* Efeito de desfoque */
+    transition: all 0.3s ease-in-out; /* Animação suave */
+    z-index: 1000;
+  }
+  
+  /* Estilos para o título da caixa de informações */
+  .info-box h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  
+  /* Estilos para os parágrafos dentro da caixa de informações */
+  .info-box p {
+    margin: 5px 0;
+    line-height: 1.6; /* Melhor espaçamento entre linhas */
+  }
+  
+  /* Efeitos para hover nos elementos interativos */
+  .quantum-cube-mount:hover .info-box {
+    transform: translateY(-10px); /* Leve elevação ao hover */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Sombra mais forte */
+  }
+  
