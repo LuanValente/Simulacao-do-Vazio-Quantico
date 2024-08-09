@@ -156,7 +156,6 @@ const QuantumCube: React.FC = () => {
           <h3>Partícula Quântica</h3>
           <p>Energia: {hoveredParticle.energy.toFixed(2)}</p>
           <p>Movimento: {hoveredParticle.movement.toFixed(2)}</p>
-          <p>Molécula: {`Molécula de ${hoveredParticle.energy > 0.5 ? 'Alta' : 'Baixa'} Energia`}</p>
         </div>
       )}
     </div>
