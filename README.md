@@ -32,6 +32,8 @@ Este projeto oferece uma maneira visual e interativa de explorar e compreender c
 - **Three.js:** Biblioteca JavaScript para criar e renderizar gráficos 3D.
 - **TypeScript:** Superconjunto de JavaScript que adiciona tipagem estática ao código.
 - **CSS:** Para estilização .
+## Acesso pela web
+Link do site para demonstração : https://main--simulacaovazioquantico.netlify.app/
 
 ## Instalação
 
