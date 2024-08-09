@@ -1,5 +1,5 @@
 # Simulação de Flutuação Quântica no Espaço Vazio
-
+![tela 2](https://github.com/user-attachments/assets/879aaa82-5233-4c29-9c5a-33195f38e385)
 Este projeto é uma visualização interativa que simula o conceito de flutuações quânticas no vácuo, utilizando tecnologias modernas como React.js e Three.js. A simulação ilustra como, mesmo em um espaço aparentemente vazio, há uma atividade energética constante em nível quântico.
 
 ## Índice
