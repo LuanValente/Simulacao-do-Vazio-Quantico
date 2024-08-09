@@ -1,46 +1,80 @@
-# Getting Started with Create React App
+# Simulação de Flutuação Quântica no Espaço Vazio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto é uma visualização interativa que simula o conceito de flutuações quânticas no vácuo, utilizando tecnologias modernas como React.js e Three.js. A simulação ilustra como, mesmo em um espaço aparentemente vazio, há uma atividade energética constante em nível quântico.
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+- [Descrição](#descrição)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Contribuição](#contribuição)
+- [Licença](#licença)
 
-### `npm start`
+## Descrição
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+As flutuações quânticas de vácuo são um fenômeno previsto pela teoria quântica de campos, que descreve o comportamento das partículas subatômicas. Segundo essa teoria, o vácuo quântico não é realmente vazio, mas sim um estado dinâmico onde partículas virtuais estão constantemente sendo criadas e aniquiladas.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Características Principais
 
-### `npm test`
+- **Movimento Partículas:** As partículas na simulação se movem de maneira aleatória para representar a incerteza quântica, um dos princípios fundamentais da mecânica quântica.
+- **Flutuações Energéticas:** As partículas mudam de cor, com áreas vermelhas indicando picos temporários de energia, simulando as flutuações quânticas no vácuo.
+- **Visualização 3D:** Um cubo 3D simula o espaço onde ocorrem as flutuações, criando uma representação visual das mudanças de energia.
+- **Interface Interativa:** A interface inclui descrições expansíveis para ajudar os usuários a entenderem os fenômenos simulados, com transições suaves e design responsivo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Aplicações
 
-### `npm run build`
+Este projeto oferece uma maneira visual e interativa de explorar e compreender conceitos abstratos da física quântica, como a incerteza e a dinâmica do vácuo quântico.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **React.js:** Biblioteca JavaScript para construir interfaces de usuário.
+- **Three.js:** Biblioteca JavaScript para criar e renderizar gráficos 3D.
+- **TypeScript:** Superconjunto de JavaScript que adiciona tipagem estática ao código.
+- **CSS:** Para estilização .
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Instalação
 
-### `npm run eject`
+Siga os passos abaixo para rodar o projeto localmente:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/LuanValente/Simulacao-do-Vazio-Quantico.git
+    ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd frontend
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Inicie o servidor de desenvolvimento:
+    ```bash
+    npm start
+    ```
 
-## Learn More
+## Uso
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Após iniciar o servidor de desenvolvimento, acesse `http://localhost:3000` no navegador para ver a simulação em ação. A interface principal inclui uma visualização 3D do cubo representando o espaço onde ocorrem as flutuações quânticas.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Interatividade
+
+Clique no botão "Saiba mais" para expandir e ler sobre os conceitos físicos por trás da simulação, como as flutuações quânticas de vácuo e a incerteza quântica.
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você deseja melhorar este projeto, siga os passos abaixo:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas alterações (`git commit -m 'Adiciona nova feature'`).
+4. Envie para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
